@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{% block content %}
+<div class="jumbotron">
+<h1>Did a puppy get adopted?</h1>
+<p>if so: please fill out their id to remove database</p>
+<form method="post">
+  {{del_form.hidden_tag()}}
+  {{del_form.id.label}}{{del_form.id()}}
+  {{del_form.Del()}}
+</form>
+</div>
+{% endblock %}
