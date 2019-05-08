@@ -1,0 +1,44 @@
+{% extends 'base4.html'%}
+{% block content %}
+<div class="jumbotron">
+  <h1>lets see how u performed</h1>
+  {% if lun %}
+  <h1>YOur Username passed the 3 requirements</h1>
+
+  {% elif ntl %}
+  <h1>oh no looks like you have problem</h1>
+  <h1>here are the requirements u have failed:</h1>
+  <ul>
+    <li>ur username dont have lowercase character</li>
+  </ul>
+
+  {% elif ntlu %}
+  <h1>oh no looks like you have problem</h1>
+  <h1>here are the requirements u have failed:</h1>
+  <ul>
+    <li>ur username dont have lowercase character</li>
+    <li>ur username dont have uppercase character</li>
+  </ul>
+
+  {% elif ntlun %}
+  <h1>oh no looks like you have problem</h1>
+  <h1>here are the requirements u have failed:</h1>
+  <ul>
+    <li>ur username dont have lowercase character</li>
+    <li>ur username dont have uppercase character</li>
+    <li>ur username dont have last char digit</li>
+  </ul>
+
+  {% elif ntu %}
+  <h1>oh no looks like you have problem</h1>
+  <h1>here are the requirements u have failed:</h1>
+  <ul>
+    <li>ur username dont have uppercase character</li>
+  </ul>
+
+  {% elif ntusername %}
+  <h1>oh no looks like you have not entered any username</h1>
+
+  {% endif %}
+</div>
+{% endblock %}
