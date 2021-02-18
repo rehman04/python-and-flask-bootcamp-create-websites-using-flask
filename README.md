@@ -4,7 +4,7 @@ Flask is a micro web framework written in Python. It is classified as a microfra
 
 ---
 # What is this repository is all about?
-### This repository includes following topics to uderstands:
+### This repository includes following topics to uderstand:
    - Flask Forms , security , BluePrints etc.
    - SQLite.
    - Jinja Template.
